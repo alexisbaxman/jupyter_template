@@ -1,6 +1,6 @@
 There are several workflows to create and work with Jupyter Book:
 * **Canonical Jupyter Book workflow:** as described in the official Jupyter Book documentation, it requires to locally install Jupyter Book (via pip or conda-forge) and use command line to build the book from MyST Markdown. This is the most standard approach and is useful for local preview.
-* **GitHub direct workflow:**  This is the workflow used for the MEGqc and BIDS-Manager documentation, and the one described in this protocol. The book is created and maintained by editing the repository files directly in GitHub, while GitHub Actions handles building and deploying the website.
+* **GitHub direct workflow:**  This is the workflow used for the MEGqc and BIDS-Manager documentation, and the one described in this protocol. You can create and edit your book by editing the repository files directly in GitHub, while GitHub Actions handles the building and deployment of the website.
 
 *This protocol allows you to clone it and start your own documentation by editing the existing files. The pcitures in this protocols are stored in the folder `pics`, which you can safely erase. The images are taken from the BIDS-Manager documentation.*
 
