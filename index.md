@@ -12,6 +12,13 @@ _config.yml: the configuration of the book, such as title, logo, creators…
 requirements.txt: python dependencies used by the build.
 .github/workflows/deploy.yml: It includes the key instructions for GitHub Actions that builds the book and published it to GitHub Pages. 
 
+
+
+1. The repository has to be public.
+2. 2. In Settings > Pages > Build and deployment: Source: GitHub Actions
+
+
+
 Other elements:
 Images
 Boxes
