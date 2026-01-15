@@ -1,4 +1,8 @@
 root: index
 format: jb-book
 chapters:
-- file: content/more
+- file: content/page_2
+- file: content/page_3
+  sections:
+    - file: section/page_4
+    - file: section/page_5
