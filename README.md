@@ -6,26 +6,34 @@ There are several workflows to create and work with Jupyter Book:
 
 
 # How to start:
-The quickest approach is to clone an existing documentation repository that already compiles and deploy successfully, and then edit the markdown files to your needs. Still, this protocol will explain how to manually create the essential files, to get a closer understanding of how Jupyter Book compiles the GitHub page. 
+The quickest approach is to clone an existing documentation repository that already compiles and deploys successfully, and then edit the Markdown files to fit your needs. This repository contains the essential files and structure needed to build and deploy a Jupyter Book.
+
+* `_toc.yml`: defines the book structure, the pages that will be included, its order and hierarchy. The `chapters` are the top-level pages and the `sections` are nested pages under a chapter. In the example below, pages 4 and 5 (`sections`) are nested pages under page 3 (`chapter`). The file includes the path to the markdown file without the `.md` extension. It's recommended to keep the content in folders (e.g., `content\`, `section\`). This same structure will be shown in the compiled Jupyter Book left navigation panel.
+<img src="./static/pics/toc.png" alt="index" width="350px" align="center">
+
 
 * `index.md`: the “home” page of the book,
 <img src="./static/pics/index.png" alt="index" width="350px" align="center">
 
 
-* `_toc.yml`: defines the book structure: the pages that will be included, the page order and the hierarchy of “sections”.
 * `_config.yml`: the configuration of the book, such as title, logo, creators…
 * `requirements.txt`: python dependencies used by the build.
-* `.github/workflows/deploy.yml`: It includes the key instructions for GitHub Actions that builds the book and published it to GitHub Pages. 
+* `.github/workflows/deploy.yml`: It includes the key instructions for GitHub Actions that builds the book and published it to GitHub Pages.
+* `README.md`:
 
 
+# Important steps
 
 1. The repository has to be public.
 2. 2. In Settings > Pages > Build and deployment: Source: GitHub Actions
+  This book is built and deployed automatically via **GitHub Actions**.  
+If the site doesn’t update, check the **Actions** tab for build logs.
+   
 
+# How to compile pictures
 
+`\static`: the pictures in this ReadMe are stored in the folder `pics`, which you can safely erase, to store your pictures for your Jupyter Book documentation, stored them in the `static` folder).* 
 
-Other elements:
-Images
 Boxes
 
 
