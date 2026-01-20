@@ -1,4 +1,4 @@
-# Page 3
+# Page Three
 
 This is a template page. Edit `content/page_3.md` to match your project.
 
