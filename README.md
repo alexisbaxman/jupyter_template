@@ -12,13 +12,14 @@ The quickest approach is to clone an existing documentation repository that alre
 
 * `_toc.yml`: defines the book structure, which pages are included, their order and hierarchy. `chapters` are the top-level pages, and `sections` are nested pages under a chapter. In the example below, pages 4 and 5 (the `sections`) are nested pages under page 3 (the `chapter`). The `_toc.yml` references each Markdown file by its relative path without the .md extension. It's recommended to keep the files organized in folders (e.g., content/, section/). This structure will be reflected in the compiled Jupyter Book's left navigation panel.
 
-<img src="./static/pics/toc.png" alt="toc" width="550px" align="center">
+<img src="./static/pics/toc.png" alt="toc" width="650px" align="center">
 
 
 
 
-* `index.md`: the “home” page of the book,
-<img src="./static/pics/index.png" alt="index" width="550px" align="center">
+* `index.md`: by convention, `index.md` is the filename use for the welcome page of the Jupyter Book. It typically includes a brief overview of what the documentation is for, who it is intended for (e.g., beginners vs. advanced users), any prerequisites (e.g., Python, required software, background knowledge), links for support (e.g., contact email, GitHub Issues), and optional sections such as acknowledgements or citations.
+
+<img src="./static/pics/index.png" alt="index" width="650px" align="center">
 
 
 * `_config.yml`: the configuration of the book, such as title, logo, creators…
