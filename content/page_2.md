@@ -1,4 +1,4 @@
-# Page 2
+# Page Two
 
 This is a template page 2. Edit `content/page_2.md` to match your project.
 
