@@ -9,7 +9,7 @@ There are several workflows to create and work with Jupyter Book:
 The quickest approach is to clone an existing documentation repository that already compiles and deploy successfully, and then edit the markdown files to your needs. Still, this protocol will explain how to manually create the essential files, to get a closer understanding of how Jupyter Book compiles the GitHub page. 
 
 * `index.md`: the “home” page of the book,
-<img src="./pics/index.png" alt="index" width="350px" align="center">
+<img src="./static/pics/index.png" alt="index" width="350px" align="center">
 
 
 * `_toc.yml`: defines the book structure: the pages that will be included, the page order and the hierarchy of “sections”.
