@@ -1,4 +1,4 @@
-# Page 4
+# Page Four
 
 This is a template page under page 3. Edit `section/page_4.md` to match your project.
 
