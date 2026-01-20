@@ -9,11 +9,12 @@ There are several workflows to create and work with Jupyter Book:
 The quickest approach is to clone an existing documentation repository that already compiles and deploys successfully, and then edit the Markdown files to fit your needs. This repository contains the essential files and structure needed to build and deploy a Jupyter Book.
 
 * `_toc.yml`: defines the book structure, the pages that will be included, its order and hierarchy. The `chapters` are the top-level pages and the `sections` are nested pages under a chapter. In the example below, pages 4 and 5 (`sections`) are nested pages under page 3 (`chapter`). The file includes the path to the markdown file without the `.md` extension. It's recommended to keep the content in folders (e.g., `content\`, `section\`). This same structure will be shown in the compiled Jupyter Book left navigation panel.
-<img src="./static/pics/toc.png" alt="index" width="350px" align="center">
+<img src="./static/pics/toc.png" alt="index" width="550px" align="center">
+
 
 
 * `index.md`: the “home” page of the book,
-<img src="./static/pics/index.png" alt="index" width="350px" align="center">
+<img src="./static/pics/index.png" alt="index" width="550px" align="center">
 
 
 * `_config.yml`: the configuration of the book, such as title, logo, creators…
