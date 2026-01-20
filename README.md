@@ -17,9 +17,9 @@ The quickest approach is to clone an existing documentation repository that alre
 
 
 
-* `index.md`: by convention, `index.md` is the filename use for the welcome page of the Jupyter Book. It typically includes a brief overview of what the documentation is for, who it is intended for (e.g., beginners vs. advanced users), any prerequisites (e.g., Python, required software, background knowledge), links for support (e.g., contact email, GitHub Issues), and optional sections such as acknowledgements or citations.
+* `index.md`: by convention, "index.md" is the filename use for the welcome page of the Jupyter Book. It typically includes a brief overview of what the documentation is for, who it is intended for (e.g., beginners vs. advanced users), any prerequisites (e.g., Python, required software, background knowledge), links for support (e.g., contact email, GitHub Issues), and optional sections such as acknowledgements or citations.
 
-<img src="./static/pics/index.png" alt="index" width="650px" align="center">
+<img src="./static/pics/index.png" alt="index" width="550px" align="center">
 
 
 * `_config.yml`: the configuration of the book, such as title, logo, creators…
@@ -31,15 +31,13 @@ The quickest approach is to clone an existing documentation repository that alre
 ## Important steps
 
 1. The repository has to be public.
-2. 2. In Settings > Pages > Build and deployment: Source: GitHub Actions
-  This book is built and deployed automatically via **GitHub Actions**.  
-If the site doesn’t update, check the **Actions** tab for build logs.
+2. This book is built and deployed automatically via **GitHub Actions**.  (In Settings > Pages > Build and deployment: Source: GitHub Actions)
+3. If the site doesn’t update, check the **Actions** tab for build logs.
    
 
 ## How to compile pictures
 
-`\static`: the pictures in this ReadMe are stored in the folder `pics`, which you can safely erase, to store your pictures for your Jupyter Book documentation, stored them in the `static` folder).* 
-
-Boxes
+* `\static`: the pictures in this ReadMe are stored in the folder `pics`, which you can safely erase, to store your pictures for your Jupyter Book documentation, stored them in the `static` folder).* 
+* Boxes
 
 
