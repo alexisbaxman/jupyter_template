@@ -14,15 +14,21 @@ The quickest approach is to clone an existing documentation repository that alre
 
 <img src="./static/pics/toc.png" alt="toc" width="650px" align="center">
 
-
+<br>
 
 
 * `index.md`: by convention, "index.md" is the filename use for the welcome page of the Jupyter Book. It typically includes a brief overview of what the documentation is for, who it is intended for (e.g., beginners vs. advanced users), any prerequisites (e.g., Python, required software, background knowledge), links for support (e.g., contact email, GitHub Issues), and optional sections such as acknowledgements or citations.
 
 <img src="./static/pics/index.png" alt="index" width="550px" align="center">
 
+<br>
 
-* `_config.yml`: the configuration of the book, such as title, logo, creators…
+* `_config.yml` (optional): customize some elements of the Jupyter Book's such as title, author, logo, the URL to your book's repository... The book can still build without this file, but some settings can introduce extra dependencies.
+
+
+
+<br>
+
 * `requirements.txt`: python dependencies used by the build.
 * `.github/workflows/deploy.yml`: It includes the key instructions for GitHub Actions that builds the book and published it to GitHub Pages.
 * `README.md`:
