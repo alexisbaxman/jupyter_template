@@ -23,7 +23,9 @@ The quickest approach is to clone an existing documentation repository that alre
 
 <br>
 
-* `_config.yml` (optional): customize some elements of the Jupyter Book's such as title, author, logo, the URL to your book's repository... The book can still build without this file, but some settings can introduce extra dependencies and break the build.
+* `_config.yml` (optional): customize some elements of the Jupyter Book's such as title, author, logo, the URL to your book's repository... The book can still build without this file, but it's highly recommended to have a basic customization. The `_config.yml` file in this repository is quite basic, but many extra functions and settings are available, careful whenever you activate them as they can introduce extra dependencies and break the build.
+
+<img src="./static/pics/config.png" alt="toc" width="650px" align="center">
 
 
 
