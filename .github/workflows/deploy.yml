@@ -5,15 +5,6 @@ on:
     branches:
       - main
 
-env:
-  BUILD_DIR: . 
-  BUILD_OUTPUT: _build/html 
-  BASE_URL: /${{ github.event.repository.name }}
-
-concurrency:
-  group: "pages"
-  cancel-in-progress: false
-
 jobs:
   deploy-book:
     runs-on: ubuntu-latest
