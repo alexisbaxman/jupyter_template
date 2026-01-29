@@ -10,6 +10,9 @@ There are several workflows to create and work with Jupyter Book:
 ## How to start:
 The quickest approach is to clone an existing documentation repository that already compiles and deploys successfully, and then edit the Markdown files to fit your needs. This repository contains the essential files and structure needed to build and deploy a Jupyter Book.
 
+* `README.md`: The Markdown `README` file you are currently reading. It follows standard Markdown rules (explained below). Feel free to modify it.  
+
+
 * `_toc.yml`: defines the book structure, which pages are included, their order and hierarchy. `chapters` are the top-level pages, and `sections` are nested pages under a chapter. In the example below, pages 4 and 5 (the `sections`) are nested pages under page 3 (the `chapter`). The `_toc.yml` references each Markdown file by its relative path without the .md extension. It's recommended to keep the files organized in folders (e.g., content/, section/). This structure will be reflected in the compiled Jupyter Book's left navigation panel.
 
 <img src="./static/pics/toc.png" alt="toc" width="650px" align="center">
@@ -27,17 +30,20 @@ The quickest approach is to clone an existing documentation repository that alre
 
 <img src="./static/pics/config.png" alt="toc" width="650px" align="center">
 
+<br>
+
+* `.github/workflows/deploy.yml`: It includes the key instructions for GitHub Actions that builds the book and published it to GitHub Pages. It activates every time a change happens anywhere in the repository. It installs Jupyter Book and any specified dependencies.  The `deploy.yml` in this repository is reduced to the essential configurations, taken from the official [GitHub Pages and Actions](https://jupyterbook.org/v1/publish/gh-pages.html).
 
 
 <br>
 
 * `requirements.txt`: A plain text file listing the Python packages required to build the Jupyter Book. During deployment, this file is read by the workflow file (`deploy.yml`), which uses it to `pip` install the specified dependencies. If required packages are missing or incompatible, the book compilation will fail.
    * For a very basic Jupyter Book (like this template), specifying `jupyter-book==1.0.0` in requirements.txt is `sufficient`. However, additional dependencies or specific versions of extensions can be added as needed (for example, `sphinx==7.4.7`). It is also possible to install packages directly in the deployment workflow (`deploy.yml`), but this can lead to conflicts with the dependencies specified in `requirements.txt`.
- 
 
+<!--
+picture: deploy.yml --> requirements.txt
+-->
 
-* `.github/workflows/deploy.yml`: It includes the key instructions for GitHub Actions that builds the book and published it to GitHub Pages.
-* `README.md`:
 
 
 ## Important steps
