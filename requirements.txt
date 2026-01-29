@@ -1,5 +1,3 @@
-%sphinx-book-theme
-%myst-nb
-%ghp-import
+ghp-import
 jupyter-book
-%jupytext
+jupytext
