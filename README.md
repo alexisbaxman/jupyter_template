@@ -31,7 +31,7 @@ The quickest approach is to clone an existing documentation repository that alre
 
 <br>
 
-* `requirements.txt`: python dependencies used by the build.
+* `requirements.txt`: A plain text file listing the Python packages needed to build the Jupyter Book. During deployment, this file is read by the GitHub Actions workflow to `pip` install the required dependencies in the environment. If required packages are missing or incompatible, the book will fail to compile.
 
 
 
