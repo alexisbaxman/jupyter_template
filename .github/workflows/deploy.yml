@@ -21,8 +21,8 @@ jobs:
           python-version: "3.13"
 
       - name: Install dependencies
-        run: pip install -r requirements.txt
-
+         run: pip install "jupyter-book==1.0.0"
+ 
       - name: Build the book
         run: jupyter-book build .
 
