@@ -31,9 +31,9 @@ The quickest approach is to clone an existing documentation repository that alre
 
 <br>
 
-* `requirements.txt`: A plain text file listing the Python packages needed to build the Jupyter Book. During deployment, this file is read by the GitHub Actions workflow to `pip` install the required dependencies in the environment. If required packages are missing or incompatible, the book will fail to compile.
-
-
+* `requirements.txt`: A plain text file listing the Python packages required to build the Jupyter Book. During deployment, this file is read by the workflow file (`deploy.yml`), which uses it to `pip` install the specified dependencies. If required packages are missing or incompatible, the book compilation will fail.
+   * For a very basic Jupyter Book (like this template), specifying `jupyter-book==1.0.0` in requirements.txt is `sufficient`. However, additional dependencies or specific versions of extensions can be added as needed (for example, `sphinx==7.4.7`). It is also possible to install packages directly in the deployment workflow (`deploy.yml`), but this can lead to conflicts with the dependencies specified in `requirements.txt`.
+ 
 
 
 * `.github/workflows/deploy.yml`: It includes the key instructions for GitHub Actions that builds the book and published it to GitHub Pages.
