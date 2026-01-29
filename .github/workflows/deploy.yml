@@ -19,16 +19,15 @@ jobs:
     runs-on: ubuntu-latest
 
     permissions:
-      contents: read
       pages: write
       id-token: write      
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
       - name: Set up Python 3.11
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
-          python-version: 3.11
+          python-version: "3.13"
 
       - name: Install dependencies
         run: pip install -r requirements.txt
@@ -38,12 +37,10 @@ jobs:
           jupyter-book build .
 
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v4
         with:
-          path: ${{ env.BUILD_DIR }}/${{ env.BUILD_OUTPUT }}
+          path: _build/html
 
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-        with:
-          artifact_name: github-pages
