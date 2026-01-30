@@ -1,7 +1,7 @@
 # Page Two
 
 
-<img src="./static/pics/toc.png" alt="toc" width="400px" align="center">
+<img src="../static/pics/toc.png" alt="toc" width="400px" align="center">
 
 
 This is a template page 2. Edit `content/page_2.md` to match your project.
