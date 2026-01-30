@@ -57,5 +57,7 @@ picture: deploy.yml --> requirements.txt
 
 * `\static`: the pictures in this ReadMe are stored in the folder `pics`, which you can safely erase, to store your pictures for your Jupyter Book documentation, stored them in the `static` folder).* 
 * Boxes
+* CheatSheet
+* LICENSE  
 
 
