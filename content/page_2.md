@@ -13,3 +13,5 @@ This is a template page 2. Edit `content/page_2.md` to match your project.
 
 *Curabitur auctor molestie ex. Quisque sit amet neque bibendum, sagittis dolor at, finibus nibh. Integer pulvinar mattis leo, fermentum aliquam elit rutrum vitae. Aliquam erat volutpat. Proin sed nibh blandit felis blandit aliquet. Mauris finibus auctor auctor. Fusce lacinia, risus quis sodales porta, dui erat hendrerit enim, nec aliquet arcu quam eu risus. Morbi nec tincidunt elit. Mauris quis mollis purus. Pellentesque at ipsum ut augue rhoncus malesuada. Ut eu dui augue.*
 
+<img src="/static/pics/toc.png" alt="toc" width="400px" align="center">
+
