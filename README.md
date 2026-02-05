@@ -8,12 +8,12 @@ There are several workflows to create and work with Jupyter Book:
 
 
 ## How to start:
-The quickest approach is to clone an existing documentation repository that already compiles and deploys successfully, and then edit the Markdown files to fit your needs. This repository contains the essential files and structure needed to build and deploy a Jupyter Book.
+The quickest approach is to clone an existing documentation repository that already compiles and deploys successfully, and then edit the different files to fit your needs. This repository contains the essential files and structure needed to build and deploy a Jupyter Book.
 
-* `README.md`: The Markdown `README` file you are currently reading. It follows standard Markdown rules (explained below). Feel free to modify it.  
+* `README.md`: This Markdown file defines the description shown on a repository's front page, such as the protocol you are currently reading. It follows standard Markdown rules (explained below). Feel free to modify it.
 
-
-* `_toc.yml`: defines the book structure, which pages are included, their order and hierarchy. `chapters` are the top-level pages, and `sections` are nested pages under a chapter. In the example below, pages 4 and 5 (the `sections`) are nested pages under page 3 (the `chapter`). The `_toc.yml` references each Markdown file by its relative path without the .md extension. It's recommended to keep the files organized in folders (e.g., content/, section/). This structure will be reflected in the compiled Jupyter Book's left navigation panel.
+* `_toc.yml`: This YAML file defines the Jupyter Book structure, such as which pages are included, their order and hierarchy.
+* `chapters` are the top-level pages, and `sections` are nested pages under a chapter. In the example below, pages 4 and 5 (the `sections`) are nested pages under page 3 (the `chapter`). The `_toc.yml` references each Markdown file by its relative path without the .md extension. It's recommended to keep the files organized in folders (e.g., content/, section/). This structure will be reflected in the compiled Jupyter Book's left navigation panel.
 
 <img src="./static/pics/toc.png" alt="toc" width="650px" align="center">
 
