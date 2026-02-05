@@ -41,14 +41,15 @@ The quickest approach is to clone an existing documentation repository that alre
 * `.github/workflows/deploy.yml`: This YAML file includes the key instructions for GitHub Actions that builds the book and published it to GitHub Pages. It activates every time a change happens anywhere in the repository. `deploy.yml` sets up a Python environment, `pip` installs the dependencies, builds the book, and deploys the generated HTML. The `Actions` tab of the repository shows you these steps as they progress as well as where they fall.
  * The `deploy.yml` in this repository is reduced to the essential configurations, taken from the official [GitHub Pages and Actions](https://jupyterbook.org/v1/publish/gh-pages.html).
 
-<img src="./static/pics/config.png" alt="toc" width="650px" align="center">
+<img src="./static/pics/deploy.jpg" alt="toc" width="650px" align="center">
 
 
 
 <br>
 
-* `requirements.txt`: A plain text file listing the Python packages required to build the Jupyter Book. During deployment, this file is read by the workflow file (`deploy.yml`), which uses it to `pip` install the specified dependencies. If required packages are missing or incompatible, the book compilation will fail.
-   * For a very basic Jupyter Book (like this template), specifying `jupyter-book==1.0.0` in requirements.txt is `sufficient`. However, additional dependencies or specific versions of extensions can be added as needed (for example, `sphinx==7.4.7`). It is also possible to install packages directly in the deployment workflow (`deploy.yml`), but this can lead to conflicts with the dependencies specified in `requirements.txt`.
+* `requirements.txt`: A plain text file listing the Python packages required to build the Jupyter Book. During deployment,  the specified dependencies in this text file get `pip` install. 
+   * For a very basic Jupyter Book (like this template), specifying `jupyter-book==1.0.0` in requirements.txt is sufficient. However, additional dependencies or specific versions of extensions can be added as needed (for example, `sphinx==7.4.7`).
+   * It is also possible to install packages directly in the deployment YAML file (`deploy.yml`), but this can lead to conflicts with the dependencies specified in `requirements.txt`.
  
 <!--
 picture: deploy.yml --> requirements.txt
