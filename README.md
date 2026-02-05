@@ -12,9 +12,11 @@ The quickest approach is to clone an existing documentation repository that alre
 
 * `README.md`: This Markdown file defines the description shown on a repository's front page, such as the protocol you are currently reading. It follows standard Markdown rules (explained below). Feel free to modify it.
 
-* `_toc.yml`: This YAML file defines the Jupyter Book structure, such as which pages are included, their order and hierarchy.
-* `chapters` are the top-level pages, and `sections` are nested pages under a chapter. In the example below, pages 4 and 5 (the `sections`) are nested pages under page 3 (the `chapter`). The `_toc.yml` references each Markdown file by its relative path without the .md extension. It's recommended to keep the files organized in folders (e.g., content/, section/). This structure will be reflected in the compiled Jupyter Book's left navigation panel.
-
+* `_toc.yml`: This YAML file defines the Jupyter Book structure, such as which pages (Markdown files) are included, their order and hierarchy. The pages are divided in `chapters` (top-level pages) and `sections` (nested pages under a chapter). The `_toc.yml` references each page by its relative path without the .md extension. In the example below you can see how:
+  * Pages 4 and 5 (`sections`) are nested pages under page 3 (`chapter`).
+  * The order and hierarchy will be reflected in the compiled Jupyter Book's left navigation panel.
+  * It's recommended to keep the pages organized in folders (e.g., content/, section/). 
+  
 <img src="./static/pics/toc.png" alt="toc" width="650px" align="center">
 
 <br>
@@ -26,9 +28,14 @@ The quickest approach is to clone an existing documentation repository that alre
 
 <br>
 
-* `_config.yml`: customize some metadata elements of the Jupyter Book's such as title, author, logo and turn on different "interactive" buttons (for example the GitHub button that allows you to link your repository). The book can still build without this file, but it's highly recommended to have a basic customization. The `_config.yml` file in this repository is quite basic, but many advance functions and settings are available, check the [Jupyter Book Configuration reference page](https://jupyterbook.org/v1/customize/config.html).
+* `_config.yml`: This YAML file customizes some metadata elements of the Jupyter Book's such as title, author and logo. The book can still build without this file, but it's highly recommended to have a basic customization. The `_config.yml` file in this repository is quite basic, but many advance functions and settings are available, check the [Jupyter Book Configuration reference page](https://jupyterbook.org/v1/customize/config.html).
 
 <img src="./static/pics/config.png" alt="toc" width="650px" align="center">
+
+  * The  "HTML-specific settings" of the `_config.yml` file allows to turn on the GitHub button in the right-top corner. When hovering, you get quick access to the whole repository, to the edition page and to the issues page.'
+<img src="./static/pics/github_option.jpg" alt="toc" width="250px" align="right">
+  * The "parse > myst_enable_extensions" of the `_config.yml` file is necessary to work with raw HTML images. More about handling HTML images below. 
+
 
 <br>
 
