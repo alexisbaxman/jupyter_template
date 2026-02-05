@@ -32,12 +32,15 @@ The quickest approach is to clone an existing documentation repository that alre
 
 <img src="./static/pics/config.png" alt="toc" width="650px" align="center">
 
-  * The  "HTML-specific settings" of the `_config.yml` file allows to turn on the GitHub button in the right-top corner. When hovering, you get quick access to the whole repository, to the edition page and to the issues page.'
-<img src="./static/pics/github_option.jpg" alt="toc" width="250px" align="right">
+  * <img src="./static/pics/github_option.jpg" alt="toc" width="250px" align="right"> The  "HTML-specific settings" of the `_config.yml` file allows to turn on the GitHub button in the right-top corner. When hovering, you get quick access to the whole repository, to the edition page and to the issues page.'
+
+
   * The "parse > myst_enable_extensions" of the `_config.yml` file is necessary to work with raw HTML images. More about handling HTML images below. 
 
 
+
 <br>
+
 
 * `.github/workflows/deploy.yml`: It includes the key instructions for GitHub Actions that builds the book and published it to GitHub Pages. It activates every time a change happens anywhere in the repository. It installs Jupyter Book and any specified dependencies.  The `deploy.yml` in this repository is reduced to the essential configurations, taken from the official [GitHub Pages and Actions](https://jupyterbook.org/v1/publish/gh-pages.html).
 
