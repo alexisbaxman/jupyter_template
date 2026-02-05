@@ -35,13 +35,14 @@ The quickest approach is to clone an existing documentation repository that alre
 
 <img src="./static/pics/config.png" alt="toc" width="650px" align="center">
 
-
-
-
 <br>
 
 
-* `.github/workflows/deploy.yml`: It includes the key instructions for GitHub Actions that builds the book and published it to GitHub Pages. It activates every time a change happens anywhere in the repository. It installs Jupyter Book and any specified dependencies.  The `deploy.yml` in this repository is reduced to the essential configurations, taken from the official [GitHub Pages and Actions](https://jupyterbook.org/v1/publish/gh-pages.html).
+* `.github/workflows/deploy.yml`: This YAML file includes the key instructions for GitHub Actions that builds the book and published it to GitHub Pages. It activates every time a change happens anywhere in the repository. `deploy.yml` sets up a Python environment, `pip` installs the dependencies, builds the book, and deploys the generated HTML. The `Actions` tab of the repository shows you these steps as they progress as well as where they fall.
+ * The `deploy.yml` in this repository is reduced to the essential configurations, taken from the official [GitHub Pages and Actions](https://jupyterbook.org/v1/publish/gh-pages.html).
+
+<img src="./static/pics/config.png" alt="toc" width="650px" align="center">
+
 
 
 <br>
