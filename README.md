@@ -78,7 +78,7 @@ For this to work, the repository must be public.
 ## Cheatsheet
 
 * [Quickstart tutorial of writting in Markdown by Jupyter Book community](https://jupyterbook.org/stable/get-started/create-content/)
-* Bash block: this block allows you to write command lines that won't be interpretated and creates a copy-paste button. You can create different layers of bash block by matching backticks ``` 
+* Bash block: this block allows you to write command lines that won't be interpretated and creates a copy-paste button.
 
 ````bash
 
@@ -89,19 +89,28 @@ For this to work, the repository must be public.
 
 
 
-* Admonition
+* Admonition: You can create these blocks with text with the admonitions. There are several different ones, 
+
+
+
+```{admonition} In-memory graph?
+:class: tip
+If you want to learn more how ancpBIDS uses the BIDS specification to build the in-memory graph representation (and what exactly is a in-memory graph representation), [follow this link](../extra/inmemory.md).
+
+```
+
 
 * Comment out
 ```bash
 
 <!--
-Content to commented out
+
+This content will not appear in the final deployment.
+
 -->
 
 ```
 
-* Boxes: admonitions
-* CheatSheet
 
 
 
