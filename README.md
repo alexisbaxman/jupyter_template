@@ -9,7 +9,7 @@ The quickest approach is to clone an existing repository that already builds and
 To publish your documentation, go to Settings in your repository. In the left sidebar, open Pages, and under Build and deployment, select GitHub Actions as the source. Once this is set, GitHub will automatically provide the link to your Jupyter Book.
 For this to work, the repository must be public.
 
-## Essential Files 
+## Essential files 
 
 * `README.md`: This Markdown file defines the description shown on a repository's front page, such as the protocol you are currently reading. It follows standard Markdown rules (explained below). Feel free to modify it.
 
