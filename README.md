@@ -78,12 +78,11 @@ For this to work, the repository must be public.
 ## Cheatsheet
 
 * [Quickstart tutorial of writting in Markdown by Jupyter Book community](https://jupyterbook.org/stable/get-started/create-content/)
-* Bash block: this block allows you to write command lines that won't be interpretated and creates a copy-paste button.
+* Bash block: this block allows you to write command lines that won't be interpretated and creates a copy-paste button. You can create different layers of bash block by matching backticks ``` 
 
-```bash
+````bash
 
   ```bash
-
   ``` 
 
 ```` 
