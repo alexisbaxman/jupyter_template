@@ -60,17 +60,31 @@ For this to work, the repository must be public.
 
 
 
-## How to compile pictures
+## Images
 
-* `\static`: the pictures in this ReadMe are stored in the folder `pics`, which you can safely erase, to store your pictures for your Jupyter Book documentation, stored them in the `static` folder).* 
-* Boxes
+* By convention, the images used throughout your documentation are contained in the `/static` folder.
+  * The images shown in this README are stored in the `\pics` subfolder inside the static folder. This subfolder is only provided as an example and can be safely removed.
+* To display an image using raw HTML in Markdown, we recommend the following syntax:
+
+```bash
+<img src="../static/your/picture.jpg" alt="nickname" width="650px" align="center">
+```
+
+  * You need to provide the relative path to the image file, including all subfolders and its extension (e.g. .png, .jpg, or .gif). 
+  * This command line allows you to control the image size and alignment on the page.
+
+## Jupyter Book and Markdown Syntax
+
+There are many guides for markdown syntax
+
+
+
+* Boxes: admonitions
 * CheatSheet
 
-## Markdown Syntax
 
 <!--
 picture: deploy.yml requirements.txt
 -->
 
-*This repository allows you to clone it and start your own documentation by editing the existing files right away. The pictures in this protocol are stored in the folder `pics`, which you can safely erase. The images are taken from the BIDS-Manager documentation.*
 
