@@ -79,27 +79,27 @@ For this to work, the repository must be public.
 * Bash blocks: this blocks allows you to write code that won't be interpretated and it usually creates a copy-paste button.
 
 ```bash
+
 ```bash
 
 ```
 ```
 ```
+
 
 * Admonition
 
-```bash
+* Comment out
 ```bash
 
-```
-```
+<!--
+Content to commented out
+-->
 
+```
 
 * Boxes: admonitions
 * CheatSheet
 
-
-<!--
-picture: deploy.yml requirements.txt
--->
 
 
