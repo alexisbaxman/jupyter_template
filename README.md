@@ -32,7 +32,7 @@ The quickest approach is to clone an existing documentation repository that alre
 
 <img src="./static/pics/config.png" alt="toc" width="650px" align="center">
 
-  * <img src="./static/pics/github_option.jpg" alt="toc" width="250px" align="right"> The  "HTML-specific settings" of the `_config.yml` file allows to turn on the GitHub button in the right-top corner. When hovering, you get quick access to the whole repository, to the edition page and to the issues page.'
+   * <img src="./static/pics/github_option.jpg" alt="toc" width="250px" align="right"> The  "HTML-specific settings" of the `_config.yml` file allows to turn on the GitHub button in the right-top corner. When hovering, you get quick access to the whole repository, to the edition page and to the issues page.'
 
 
   * The "parse > myst_enable_extensions" of the `_config.yml` file is necessary to work with raw HTML images. More about handling HTML images below. 
