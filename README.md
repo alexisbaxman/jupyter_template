@@ -41,11 +41,13 @@ For this to work, the repository must be public.
 <br>
 
 
-* `.github/workflows/deploy.yml`: This YAML file includes the key instructions for GitHub Actions to compile the book. It activates every time any change happens in any file of the repository. `deploy.yml` sets up a Python environment, `pip` installs the dependencies, builds the book, and deploys the generated HTML. The `Actions` tab of the repository shows you these steps as they progress as well as where they fall.
+* `.github/workflows/deploy.yml`: This YAML file includes the key instructions for GitHub Actions to compile the book. It activates every time any change happens in any file of the repository. `deploy.yml` sets up a Python environment, `pip` installs the dependencies, builds the book, and deploys the generated HTML. 
+  * The `deploy.yml` in this repository is reduced to the essential configurations, taken from the official [GitHub Pages and Actions](https://jupyterbook.org/v1/publish/gh-pages.html).
+  * The `Actions` tab of the repository shows you these steps as they progress as well as where they fall.
+
 
 <img src="./static/pics/deploy.jpg" alt="toc" width="650px" align="center">
 
-  * The `deploy.yml` in this repository is reduced to the essential configurations, taken from the official [GitHub Pages and Actions](https://jupyterbook.org/v1/publish/gh-pages.html).
 
 
 
