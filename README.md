@@ -83,24 +83,32 @@ For this to work, the repository must be public.
 ````bash
 
   ```bash
+
+
   ``` 
 
 ```` 
 
 
 
-* Admonition: You can create these blocks with text with the admonitions. There are several different ones, 
+* Admonition: Admonitions are highlighted content blocks 
+* You can create these blocks with text with the admonitions command line, the class `tip` changes the visual frame from blue to green, or the class `dropdown` to create a small . The `admonition` type can also be changed for `warning`.
 
 
+````bash
 
-```{admonition} In-memory graph?
+```{admonition} Title
 :class: tip
-If you want to learn more how ancpBIDS uses the BIDS specification to build the in-memory graph representation (and what exactly is a in-memory graph representation), [follow this link](../extra/inmemory.md).
+
+Text
 
 ```
+````
 
 
 * Comment out
+
+  
 ```bash
 
 <!--
