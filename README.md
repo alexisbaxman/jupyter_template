@@ -28,12 +28,14 @@ The quickest approach is to clone an existing documentation repository that alre
 
 <br>
 
+
 * `_config.yml`: This YAML file customizes some metadata elements of the Jupyter Book's such as title, author and logo. The book can still build without this file, but it's highly recommended to have a basic customization.
- * The `_config.yml` file in this repository is quite basic, but many other advance functions and settings are available, check the [Jupyter Book Configuration reference page](https://jupyterbook.org/v1/customize/config.html).
- * <img src="./static/pics/github_option.jpg" alt="toc" width="250px" align="right"> The  "HTML-specific" settings allows you to turn on the GitHub button in the right-top corner. When hovering, you get quick access to the whole repository, to the edition page and to the issues page.'
- * The "myst_enable_extensions" file is necessary to work with raw HTML images. More about handling HTML images in the next section. 
+  * The `_config.yml` file in this repository is quite basic, but many other advance functions and settings are available, check the [Jupyter Book Configuration reference page](https://jupyterbook.org/v1/customize/config.html).
+  * <img src="./static/pics/github_option.jpg" alt="toc" width="250px" align="right"> The  "HTML-specific" settings allows you to turn on the GitHub button in the right-top corner. When hovering, you get quick access to the whole repository, to the edition page and to the issues page.'
+  * The "myst_enable_extensions" file is necessary to work with raw HTML images. More about handling HTML images in the next section. 
 
 <img src="./static/pics/config.png" alt="toc" width="650px" align="center">
+
 
 <br>
 
