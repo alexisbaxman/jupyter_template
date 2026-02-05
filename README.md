@@ -4,11 +4,12 @@ There are several workflows to create and work with Jupyter Book:
 * **Canonical Jupyter Book workflow:** as described in the official Jupyter Book documentation, it requires to locally install Jupyter Book (via pip or conda-forge), initialiding a MyST project and use command line to build the book from local stored markdown files. This is the most standard approach and is useful for local preview.
 * **GitHub direct workflow:** This is the workflow used for the MEGqc and BIDS-Manager documentation, and the one described in this protocol. You can create and edit your book by editing the repository files directly in GitHub, while GitHub Actions handles the building and deployment of the website. This workflow allows you to work remotely from the browser, without a local environment, without an installed CLI. 
 
-*This repository allows you to clone it and start your own documentation by editing the existing files right away. The pictures in this protocol are stored in the folder `pics`, which you can safely erase. The images are taken from the BIDS-Manager documentation.*
+## How to start
+The quickest approach is to clone an existing repository that already builds and deploys successfully, and then adapt the files to your own needs.
+To publish your documentation, go to Settings in your repository. In the left sidebar, open Pages, and under Build and deployment, select GitHub Actions as the source. Once this is set, GitHub will automatically provide the link to your Jupyter Book.
+For this to work, the repository must be public.
 
-
-## How to start:
-The quickest approach is to clone an existing documentation repository that already compiles and deploys successfully, and then edit the different files to fit your needs. This repository contains the essential files and structure needed to build and deploy a Jupyter Book.
+## Essential Files 
 
 * `README.md`: This Markdown file defines the description shown on a repository's front page, such as the protocol you are currently reading. It follows standard Markdown rules (explained below). Feel free to modify it.
 
@@ -40,37 +41,36 @@ The quickest approach is to clone an existing documentation repository that alre
 <br>
 
 
-* `.github/workflows/deploy.yml`: This YAML file includes the key instructions for GitHub Actions that builds the book and published it to GitHub Pages. It activates every time a change happens anywhere in the repository. `deploy.yml` sets up a Python environment, `pip` installs the dependencies, builds the book, and deploys the generated HTML. The `Actions` tab of the repository shows you these steps as they progress as well as where they fall.
- * The `deploy.yml` in this repository is reduced to the essential configurations, taken from the official [GitHub Pages and Actions](https://jupyterbook.org/v1/publish/gh-pages.html).
+* `.github/workflows/deploy.yml`: This YAML file includes the key instructions for GitHub Actions to compile the book. It activates every time any change happens in any file of the repository. `deploy.yml` sets up a Python environment, `pip` installs the dependencies, builds the book, and deploys the generated HTML. The `Actions` tab of the repository shows you these steps as they progress as well as where they fall.
 
 <img src="./static/pics/deploy.jpg" alt="toc" width="650px" align="center">
+
+  * The `deploy.yml` in this repository is reduced to the essential configurations, taken from the official [GitHub Pages and Actions](https://jupyterbook.org/v1/publish/gh-pages.html).
 
 
 
 <br>
 
-* `requirements.txt`: A plain text file listing the Python packages required to build the Jupyter Book. During deployment,  the specified dependencies in this text file get `pip` install. 
+* `requirements.txt`: A plain text file listing the Python packages required to build the Jupyter Book. During deployment,  the specified dependencies in this text file get `pip` installed. 
    * For a very basic Jupyter Book (like this template), specifying `jupyter-book==1.0.0` in requirements.txt is sufficient. However, additional dependencies or specific versions of extensions can be added as needed (for example, `sphinx==7.4.7`).
    * It is also possible to install packages directly in the deployment YAML file (`deploy.yml`), but this can lead to conflicts with the dependencies specified in `requirements.txt`.
- 
-<!--
-picture: deploy.yml --> requirements.txt
--->
+
+* `LICENSE`: Defines the license of the repository. GitHub automatically detects this file and displays the license badge/icon alongside the README. This repository includes an MIT License that you can copy-paste without modification. For a detailed explanation of how GitHub handles repository licenses, see the [official documentation.](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository)
 
 
 
-## Important steps
-
-1. The repository has to be public.
-2. This book is built and deployed automatically via **GitHub Actions**.  (In Settings > Pages > Build and deployment: Source: GitHub Actions)
-3. If the site doesn’t update, check the **Actions** tab for build logs.
-   
 
 ## How to compile pictures
 
 * `\static`: the pictures in this ReadMe are stored in the folder `pics`, which you can safely erase, to store your pictures for your Jupyter Book documentation, stored them in the `static` folder).* 
 * Boxes
 * CheatSheet
-* LICENSE  
 
+## Markdown Syntax
+
+<!--
+picture: deploy.yml requirements.txt
+-->
+
+*This repository allows you to clone it and start your own documentation by editing the existing files right away. The pictures in this protocol are stored in the folder `pics`, which you can safely erase. The images are taken from the BIDS-Manager documentation.*
 
