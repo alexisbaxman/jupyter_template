@@ -91,10 +91,11 @@ For this to work, the repository must be public.
 
 
 
-* Admonition: Admonitions are highlighted content blocks 
-* You can create these blocks with text with the admonitions command line, the class `tip` changes the visual frame from blue to green, or the class `dropdown` to create a small . The `admonition` type can also be changed for `warning`.
-
-
+* Admonition: Admonitions are highlighted content blocks. The visual appearance of an admonition can be customized using the `class` option:
+   * `tip`: changes the fram color to green.
+   * `warning`: changes the from color to orange.
+   * `dropdown`: makes the content collapsible.
+ 
 ````bash
 
 ```{admonition} Title
@@ -105,8 +106,12 @@ Text
 ```
 ````
 
+<img src="./static/pics/admonition.jpg" alt="admonition" width="650px" align="center">
 
-* Comment out
+
+
+
+* Comment out: You can comment out parts that are not rendered in the final Jupyter Book.
 
   
 ```bash
