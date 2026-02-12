@@ -1,13 +1,18 @@
 # Jupyter Book Template Manual
 
 There are several workflows to create and work with Jupyter Book:
-* **Canonical Jupyter Book workflow:** as described in the official Jupyter Book documentation, it requires to locally install Jupyter Book (via pip or conda-forge), initialiding a MyST project and use command line to build the book from local stored markdown files. This is the most standard approach and is useful for local preview.
-* **GitHub direct workflow:** This is the workflow used for the MEGqc and BIDS-Manager documentation, and the one described in this protocol. You can create and edit your book by editing the repository files directly in GitHub, while GitHub Actions handles the building and deployment of the website. This workflow allows you to work remotely from the browser, without a local environment, without an installed CLI. 
+* **Canonical Jupyter Book workflow:** as described in the [official Jupyter Book documentation](https://jupyterbook.org/v1/intro.html), it requires to locally install Jupyter Book (via pip or conda-forge), initialiding a MyST project and use command line to build the book from local stored markdown files. This is the most standard approach and is useful for local preview.
+* **GitHub direct workflow:** This is the workflow used for the [MEGqc](https://ancplaboldenburg.github.io/MEGqc/) and [BIDS-Manager](https://ancplaboldenburg.github.io/BIDS-Manager/) documentation, and the one described in this protocol. The book is built and deployed automatically via GitHub Actions. You can edit files directly in the repository (even from the browser), without needing a local CLI setup.
 
 ## How to start
-The quickest approach is to clone an existing repository that already builds and deploys successfully, and then adapt the files to your own needs.
-To publish your documentation, go to Settings in your repository. In the left sidebar, open Pages, and under Build and deployment, select GitHub Actions as the source. Once this is set, GitHub will automatically provide the link to your Jupyter Book.
-For this to work, the repository must be public.
+The easiest way to begin is to clone an existing repository that already builds and deploys successfully, and then adapt it to your needs. Then, to publish your documentation:
+1. Go to **Settings** in your repository.
+2. Open **Pages** in the left sidebar.
+3. Under **Build and deployment**, select **GitHub Actions** as the source.
+
+Once configured, GitHub will automatically provide the link to your deployed Jupyter Book.
+* ⚠️
+*  Note: The repository must be public for GitHub Pages deployment to work.
 
 ## Essential files 
 
