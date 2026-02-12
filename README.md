@@ -101,12 +101,13 @@ For this to work, the repository must be public.
 ```{admonition} Title
 :class: tip
 
-Text
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
 
 ```
 ````
 
-<img src="./static/pics/admonition.jpg" alt="admonition" width="650px" align="center">
+<img src="./static/pics/admonition.jpg" alt="admonition" width="550px" align="center">
 
 
 
