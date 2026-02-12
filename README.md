@@ -13,7 +13,7 @@ The easiest way to begin is to clone an existing repository that already builds 
 Once configured, GitHub will automatically provide the link to your deployed Jupyter Book.
 
 ## Essential files 
-These files can easily be edited by clicking on the `Edit file` ✏️ and saving by `Commit changes...`. Most of them are necessary to compile your Jupyter Book. Markdown files (`.md`) follow a specific syntax you can easily learn [here](https://jupyterbook.org/stable/get-started/create-content/).
+These files can easily be edited by clicking on the `Edit file` ✏️ and saving by `Commit changes...`. Most of them are necessary to compile your Jupyter Book. Markdown files (`.md`) follow a specific syntax you can learn [here](https://jupyterbook.org/stable/get-started/create-content/).
 
 * `README.md`: This Markdown file defines the description shown on a repository's front page, such as the protocol you are currently reading. It follows standard Markdown rules. Feel free to modify it.
 
@@ -52,7 +52,7 @@ These files can easily be edited by clicking on the `Edit file` ✏️ and savin
 
 * `.github/workflows/deploy.yml`: This YAML file includes the key instructions for GitHub Actions to compile the book. `deploy.yml` sets up a Python environment, `pip` installs the dependencies, builds the book, and deploys the generated HTML. 
   * The `deploy.yml` in this repository is reduced to the essential configurations, taken from the official [GitHub Pages and Actions](https://jupyterbook.org/v1/publish/gh-pages.html).
-  * The GitHub Actions activates every time any change happens in any file of the repository. The `Actions` tab shows you these steps as they progress as well as where they fall (see picutre below).
+  * The GitHub Actions activates every time any change happens in any file of the repository. The `Actions` tab shows you these steps as they progress as well as where they fall (see picutre below). This process can take a bit of time, and sometimes the changes don't appear in the compiled Jupyter Book for a bit longer due to browser cache, therefore Incognito mode sometimes shows the latest updates earlier. 
 
 
 <img src="./static/pics/deploy.jpg" alt="toc" width="650px" align="center">
@@ -88,7 +88,7 @@ These files can easily be edited by clicking on the `Edit file` ✏️ and savin
 
 Some useful command lines for your Markdown files: 
 
-* Bash blocks: these block allow you to write command lines that won't be interpretated by Jupyter Book. It's useful to display command lines that users can easily copy-paste 📋. 
+* **Bash blocks:** these block allow you to write command lines that won't be interpretated by Jupyter Book. It's useful to display command lines that users can easily copy-paste with the icon on the right-top corner. You can create different layers of bash blocks combining different amounts of `.
 
 ````bash
 
@@ -101,8 +101,8 @@ Some useful command lines for your Markdown files:
 
 
 
-* Admonition: Admonitions are highlighted content blocks. The visual appearance of an admonition can be customized using the `class` option:
-   * `tip`: changes the fram color to green.
+* **Admonition:** Admonitions are highlighted content blocks. The visual appearance of an admonition can be customized using the `class` option:
+   * `tip`: changes the frame color to blue.
    * `warning`: changes the from color to orange.
    * `dropdown`: makes the content collapsible.
  
@@ -122,7 +122,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 
 
-* Comment out: You can comment out parts that are not rendered in the final Jupyter Book.
+* **Comment out:** You can comment out parts that will not be included in the final Jupyter Book.
 
   
 ```bash
@@ -134,6 +134,7 @@ This content will not appear in the final deployment.
 -->
 
 ```
+
 
 
 
