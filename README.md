@@ -135,7 +135,8 @@ This content will not appear in the final deployment.
 
 ```
 
-
-
+## Congrats!
+Now you are ready to start working in your own Jupyter Book!
+If you have any question, feel free to drop by the [Issues page](https://github.com/alexisbaxman/jupyter_template/issues).
 
 
