@@ -135,6 +135,9 @@ This content will not appear in the final deployment.
 
 ```
 
+* **Frequent error:** A chapter and its section don't appear in the left-side navigation bar as they appear in the toc, despite the pages following the correct order. *Possible solution:* within the chapter you might have multiple H1 heading (with only one `#`) instead of a proper hierarchy (more than one `#`).
+
+
 ## Congrats!
 Now you are ready to start working in your own Jupyter Book!
 If you have any question, feel free to drop by the [Issues page](https://github.com/alexisbaxman/jupyter_template/issues).
